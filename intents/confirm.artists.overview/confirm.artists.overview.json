@@ -1,0 +1,13 @@
+{
+  "name": "a681043d-cea9-4baf-bef9-798af06a0090",
+  "displayName": "confirm.artists.overview",
+  "parameters": [ {
+    "id": "artist",
+    "entityType": "@Artist"
+  }, {
+    "id": "shirtsize",
+    "entityType": "@ShirtSize"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 4
+}

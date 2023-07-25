@@ -1,0 +1,42 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Ok, let'",
+      "auto": true
+    }, {
+      "text": "s",
+      "parameterId": "shirtsize",
+      "auto": true
+    }, {
+      "text": " buy stuff.",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yes, I would like to order merchandise from ",
+      "auto": true
+    }, {
+      "text": "Alice Googler",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yes, I want to purchase something",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yeah, let me buy merchandise",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

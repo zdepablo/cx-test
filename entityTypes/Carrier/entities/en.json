@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "CD",
+    "synonyms": [ "CD" ],
+    "languageCode": "en"
+  }, {
+    "value": "Digital Album",
+    "synonyms": [ "Digital Album" ],
+    "languageCode": "en"
+  } ]
+}

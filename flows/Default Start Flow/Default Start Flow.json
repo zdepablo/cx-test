@@ -1,0 +1,149 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome, I am the virtual agent of G-Records, a fictional rock label. You can order artists merchandise, ask questions about order or shipping, and I can tell you more which artists are currently signed with us. How can I help you?  " ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Which artists?"
+            }, {
+              "text": "Which products?"
+            }, {
+              "text": "About my order..."
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "30d11246-2621-44a8-970b-20a8e29513cd"
+  }, {
+    "intent": "redirect.artists.overview",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Catalog",
+    "name": "addf8d9f-5131-4c8b-8105-19939766cd5d"
+  }, {
+    "intent": "redirect.product.overview\t",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Catalog",
+    "name": "b5346b83-642a-4a8b-a8e1-ae7a0c23ffa7"
+  }, {
+    "intent": "redirect.shirts",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Catalog",
+    "name": "4c86d2b6-55d7-46c6-bb06-413deac5b7f2"
+  }, {
+    "intent": "redirect.music",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Catalog",
+    "name": "af963716-bf5e-45f3-94b9-68506804c500"
+  }, {
+    "intent": "redirect.product",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Catalog",
+    "name": "f6ea496b-e2e5-4de5-86fb-74b392efb8b7"
+  }, {
+    "intent": "redirect.product.of.artist\t",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Catalog",
+    "name": "864fd499-0e33-4d94-aede-cca6da204391"
+  }, {
+    "intent": "redirect.refund.info",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Customer Care",
+    "name": "c064d725-d60e-45ab-9ca7-71398dd0966a"
+  }, {
+    "intent": "redirect.shipping.info",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Customer Care",
+    "name": "4aaada18-315d-4ad2-bf32-77f84e25d89b"
+  }, {
+    "intent": "redirect.swapping.info",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Customer Care",
+    "name": "1fd11183-faa4-4069-bfda-b7a3fe6f641b"
+  }, {
+    "intent": "redirect.my.order",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "My Order",
+    "name": "244ae0d5-81aa-4423-ad31-70704541de10"
+  }, {
+    "intent": "redirect.my.order.canceled",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "My Order",
+    "name": "db078347-46db-48a7-a7b3-b8207eda0312"
+  }, {
+    "intent": "redirect.my.order.status",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "My Order",
+    "name": "1198074c-f982-4496-a1a8-06b245e88670"
+  }, {
+    "intent": "redirect.end",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "f26e30e9-f009-4690-a2cd-7a6a0907db0e"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9ed9925f-dd16-4b41-8d37-17a7426cb258"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "71fd1507-68a5-48ae-abce-e231e316c643"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

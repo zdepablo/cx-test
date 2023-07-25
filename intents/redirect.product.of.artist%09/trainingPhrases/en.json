@@ -1,0 +1,128 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Yes of ",
+      "auto": true
+    }, {
+      "text": "The Google Doll",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Google Dolls",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am a ",
+      "auto": true
+    }, {
+      "text": "G's N' Roses",
+      "parameterId": "artist",
+      "auto": true
+    }, {
+      "text": " fan!",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Anything ",
+      "auto": true
+    }, {
+      "text": "Alice Googler",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Go for it",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yep, give me items of ",
+      "auto": true
+    }, {
+      "text": "G's N' Roses",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yes, I want to order merchandise",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want ",
+      "auto": true
+    }, {
+      "text": "The Goo Fighters",
+      "parameterId": "artist",
+      "auto": true
+    }, {
+      "text": " stuff",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yes",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"Shirts of ",
+      "auto": true
+    }, {
+      "text": "The Google Dolls",
+      "parameterId": "artist",
+      "auto": true
+    }, {
+      "text": " that would be nice.",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Give me merch of ",
+      "auto": true
+    }, {
+      "text": "Alice Googler",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yeah, let'"
+    }, {
+      "text": "s"
+    }, {
+      "text": " shop"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

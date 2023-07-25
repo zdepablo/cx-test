@@ -1,0 +1,31 @@
+{
+  "entities": [ {
+    "value": "XS",
+    "synonyms": [ "Extra Small", "XS" ],
+    "languageCode": "en"
+  }, {
+    "value": "S",
+    "synonyms": [ "S", "Small" ],
+    "languageCode": "en"
+  }, {
+    "value": "M",
+    "synonyms": [ "M", "Medium" ],
+    "languageCode": "en"
+  }, {
+    "value": "L",
+    "synonyms": [ "L", "Large" ],
+    "languageCode": "en"
+  }, {
+    "value": "XL",
+    "synonyms": [ "Extra Large", "XL" ],
+    "languageCode": "en"
+  }, {
+    "value": "2XL",
+    "synonyms": [ "2XL", "Extra Extra Large", "XXL" ],
+    "languageCode": "en"
+  }, {
+    "value": "3XL",
+    "synonyms": [ "3XL", "XXXL" ],
+    "languageCode": "en"
+  } ]
+}

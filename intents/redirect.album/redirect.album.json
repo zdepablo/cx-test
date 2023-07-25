@@ -1,0 +1,13 @@
+{
+  "name": "d5a0cf24-ab2b-40e0-b28e-4bd53451c26d",
+  "displayName": "redirect.album",
+  "parameters": [ {
+    "id": "album",
+    "entityType": "@Album"
+  }, {
+    "id": "merch",
+    "entityType": "@Merch"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 5
+}

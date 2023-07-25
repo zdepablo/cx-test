@@ -1,0 +1,88 @@
+{
+  "name": "37280aa3-35a9-434a-aee0-163902d44fad",
+  "displayName": "Catalog",
+  "transitionRoutes": [ {
+    "intent": "redirect.artists.overview",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Artist Overview",
+    "name": "03f883b6-9a93-4dc0-b7b7-5e3d1879eccf"
+  }, {
+    "intent": "redirect.product",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Product",
+    "name": "933d12f2-8511-4b8c-a79f-286936911c5b"
+  }, {
+    "intent": "redirect.product.overview\t",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Product Overview",
+    "name": "70df4ac7-0277-4cfb-b31f-687a7ff63316"
+  }, {
+    "intent": "redirect.product.of.artist\t",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Product Overview",
+    "name": "0bf94b89-7add-48dc-86f6-426e37eafb79"
+  }, {
+    "intent": "redirect.shirts",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Shirts",
+    "name": "962c9c0d-573d-404d-bca0-bbb3470744a3"
+  }, {
+    "intent": "redirect.music",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Music",
+    "name": "3b64e6cf-2e62-4fb5-a4c1-fd7897072e7c"
+  }, {
+    "intent": "redirect.end",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "73f1bf93-fa84-4432-bf4d-5553b22954c4"
+  }, {
+    "intent": "redirect.home",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "206a76a9-a0c6-4cda-9184-b71ba820479b"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "4f365385-b610-464c-8b6a-767e4a9e00bb"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "13991533-1438-4f43-9753-8dc5a9f6295c"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "name": "3d6145b2-72eb-48a9-a28f-52197dc84fa2",
+  "displayName": "Shirts",
+  "form": {
+    "parameters": [ {
+      "displayName": "merch",
+      "required": true,
+      "entityType": "@Merch",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "setParameterActions": [ {
+            "parameter": "category",
+            "value": "shirts"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "You can choose between a t-shirt or a longsleeve. Which of these do you want?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "payload": {
+                "richContent": [ [ {
+                  "options": [ {
+                    "text": "T-shirt"
+                  }, {
+                    "text": "Longsleeve"
+                  } ],
+                  "type": "chips"
+                } ] ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "44a591a6-38a0-447a-bda1-67510156b401"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I couldn't understand if you want the t-shirt or the longsleeve. Which of these do you want?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "payload": {
+                "richContent": [ [ {
+                  "options": [ {
+                    "text": "T-shirt"
+                  }, {
+                    "text": "Longsleeve"
+                  } ],
+                  "type": "chips"
+                } ] ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "76227b40-467e-4484-9ef9-4ca1c6fd6724"
+        } ]
+      },
+      "redact": true
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Do you want a longsleeve or a t-shirt?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "T-shirt"
+          }, {
+            "text": "Longsleeve"
+          }, {
+            "text": "Price?"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "redirect.price",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Price",
+    "name": "084a275f-aa24-4714-97f8-b0e0c18c9963"
+  }, {
+    "condition": "$session.params.merch = \"T-shirt\" OR $session.params.merch = \"Longsleeve\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Shirt Size",
+    "name": "e850f87c-d59d-4d00-81c8-27c0f4c8a7e9"
+  } ]
+}

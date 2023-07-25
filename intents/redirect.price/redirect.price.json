@@ -1,0 +1,10 @@
+{
+  "name": "99fb596d-c059-410d-8e82-736c1c2ccc81",
+  "displayName": "redirect.price",
+  "parameters": [ {
+    "id": "merch",
+    "entityType": "@Merch"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 8
+}

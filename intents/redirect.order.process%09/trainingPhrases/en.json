@@ -1,0 +1,118 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Please order me ",
+      "auto": true
+    }, {
+      "text": "the Google Dolls",
+      "parameterId": "artist",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "CD",
+      "parameterId": "merch",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Purchase the ",
+      "auto": true
+    }, {
+      "text": "Alice Googler",
+      "parameterId": "artist",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "t-shirt",
+      "parameterId": "merch",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Buy a ",
+      "auto": true
+    }, {
+      "text": "longsleeve shirt",
+      "parameterId": "merch",
+      "auto": true
+    }, {
+      "text": " of ",
+      "auto": true
+    }, {
+      "text": "The Goo Fighters",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Get me the ",
+      "auto": true
+    }, {
+      "text": "tour movie",
+      "parameterId": "merch",
+      "auto": true
+    }, {
+      "text": " of ",
+      "auto": true
+    }, {
+      "text": "G's N' Roses",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Let me buy the digital ",
+      "auto": true
+    }, {
+      "text": "CD",
+      "parameterId": "merch",
+      "auto": true
+    }, {
+      "text": " of ",
+      "auto": true
+    }, {
+      "text": "Alice Googler",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to buy a ",
+      "auto": true
+    }, {
+      "text": "t-shirt",
+      "parameterId": "merch",
+      "auto": true
+    }, {
+      "text": " of ",
+      "auto": true
+    }, {
+      "text": "the Google Dolls",
+      "parameterId": "artist",
+      "auto": true
+    }, {
+      "text": ", size ",
+      "auto": true
+    }, {
+      "text": "S",
+      "parameterId": "shirtsize",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}
