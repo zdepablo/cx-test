@@ -1,0 +1,117 @@
+{
+  "name": "766adaf8-6412-4ce7-a223-277f3d456bab",
+  "tags": [ "#catalog,", "#shirts,", "#t-shirt,", "#TheGoogleDolls" ],
+  "displayName": "Buy Google Dolls t-shirt size M",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Welcome, I am the virtual agent of G-Records, a fictional rock label. You can order artists merchandise, ask questions about order or shipping, and I can tell you more which artists are currently signed with us. How can I help you?  " ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Which artist are signed with your label"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.artists.overview"
+      },
+      "currentPage": {
+        "name": "Artist Overview",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "The following bands are signed with G-Records: Alice Googler, G's N' Roses, The Goo Fighters and The Google Dolls." ]
+      }, {
+        "text": [ "From which of these artists would you like to order merchandise?\r\n\r\n" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "The Google Dolls"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Product Overview",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "You want to rock with The Google Dolls merchandise. Awesome!" ]
+      }, {
+        "text": [ "We sell shirts, music or the tour movie." ]
+      }, {
+        "text": [ "Which merchandise item do you want?" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I am interested in buying a shirt"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.shirts"
+      },
+      "currentPage": {
+        "name": "Shirts",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "Do you want a longsleeve or a t-shirt?" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1690756546,
+    "nanos": 651573000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}

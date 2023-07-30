@@ -1,0 +1,36 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I can't stand the music of ",
+      "auto": true
+    }, {
+      "text": "the Google Dolls",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am not a fan of ",
+      "auto": true
+    }, {
+      "text": "G's N' Roses",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I don't like ",
+      "auto": true
+    }, {
+      "text": "Alice Googler",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

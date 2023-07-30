@@ -46,7 +46,12 @@
   }, {
     "intent": "redirect.end",
     "triggerFulfillment": {
-    
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for contacting G-Records! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
     },
     "targetPage": "End Session",
     "name": "73f1bf93-fa84-4432-bf4d-5553b22954c4"
@@ -57,6 +62,31 @@
     },
     "targetPage": "End Flow",
     "name": "206a76a9-a0c6-4cda-9184-b71ba820479b"
+  }, {
+    "condition": "$session.params.restart = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome back, as the virtual agent of G-Records, I can help you order artists merchandise, you can ask questions about your order or shipping, and I can tell you more which artists are currently signed with us. How can I help?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Which artists?"
+            }, {
+              "text": "Which products?"
+            }, {
+              "text": "About my order..."
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6a1bc0fc-8e70-46a2-83b1-d115de242c4d"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",

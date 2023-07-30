@@ -3,5 +3,75 @@
   "displayName": "Price",
   "form": {
   
-  }
+  },
+  "entryFulfillment": {
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.category = \"shirts\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "A t-shirt costs $25 and a longsleeve costs $30." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.category = \"music\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "A CD costs $15. The digital album on MP3 costs $10." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "A t-shirt costs $25 and a longsleeve costs $30. A CD costs $15 and a digital album on MP3 $10. In case you are interested in the Tour Movie, that one is $25." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.category = \"shirts\" AND $session.params.merch = \"null\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Shirts",
+    "name": "2297cd3e-6df2-41a4-8341-bae38ba2b14b"
+  }, {
+    "condition": "$session.params.category = \"shirts\" AND $session.params.category = \"null\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Shirt Size",
+    "name": "8ad743ed-5dfd-4c71-993c-e74a82c29c9f"
+  }, {
+    "condition": "$session.params.category = \"music\" AND $session.params.album = \"null\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Music",
+    "name": "c0f07cc2-099a-4a29-827c-028109987b42"
+  }, {
+    "condition": "$session.params.category = \"null\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Product Overview",
+    "name": "acdf7505-edb9-4afb-bad5-4c1582d08651"
+  }, {
+    "condition": "$session.params.category = \"music\" AND $session.params.merch = \"null\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Carrier",
+    "name": "f5e76e76-c317-49a3-8968-f04e0d4dbaf4"
+  } ]
 }

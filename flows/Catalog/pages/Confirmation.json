@@ -1,0 +1,98 @@
+{
+  "name": "a7841ab4-4973-491b-959a-3a0292079de8",
+  "displayName": "Confirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "Yes, confirm"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ],
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.merch = \"CD\" OR $session.params.merch = \"Digital Album\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "The $session.params.merch: $session.params.artist - $session.params.album costs $$session.params.price. Shall I continue to order?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.merch = \"T-shirt\" OR $session.params.merch = \"Longsleeve\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "A $session.params.merch of $session.params.artist size: $session.params.shirtsize costs $$session.params.price. Shall I continue to order?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.merch = \"Tour Movie\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "The $session.params.merch of $session.params.artist costs $$session.params.price. Shall I continue to order?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "It looks like something went wrong with your order. You can say \"Reset\", to restart the order process." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm.proceed.order",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "My Order",
+    "name": "989e2539-9465-406d-aaee-b6db0198ce70"
+  }, {
+    "intent": "decline.proceed.order",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "artist",
+        "value": null
+      }, {
+        "parameter": "merch",
+        "value": null
+      }, {
+        "parameter": "shirtsize",
+        "value": null
+      }, {
+        "parameter": "category",
+        "value": null
+      }, {
+        "parameter": "album",
+        "value": null
+      }, {
+        "parameter": "price",
+        "value": null
+      }, {
+        "parameter": "restart",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "34d0916d-2ec1-4f3f-8122-dc9ef660c9cd"
+  } ]
+}

@@ -2,6 +2,84 @@
   "name": "985bf37b-d0ba-42ba-a66e-186f9030029f",
   "displayName": "Music",
   "form": {
-  
-  }
+    "parameters": [ {
+      "displayName": "album",
+      "required": true,
+      "entityType": "@Album",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "You can choose between Greatest Hits and Live Album. Which of these do you want?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "payload": {
+                "richContent": [ [ {
+                  "options": [ {
+                    "text": "Greatest Hits"
+                  }, {
+                    "text": "Live"
+                  } ],
+                  "type": "chips"
+                } ] ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b6a41e8a-8815-436d-9692-7cac23f168d2"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I couldn't understand if you want the album: Greatest Hit or Live.  Which of these do you " ]
+              },
+              "languageCode": "en"
+            }, {
+              "payload": {
+                "richContent": [ [ {
+                  "options": [ {
+                    "text": "Greatest Hits"
+                  }, {
+                    "text": "Live"
+                  } ],
+                  "type": "chips"
+                } ] ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "9ec60d75-2416-46ff-9941-64e0e1913187"
+        } ]
+      },
+      "redact": true
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "category",
+      "value": "music"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "redirect.price",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Price",
+    "name": "ffd13d1c-6c47-4830-a31d-b0a71bd00c0d"
+  }, {
+    "condition": "$page.params.album AND ! != \"null\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Carrier",
+    "name": "462ef580-8334-4003-8b58-afc08c5dcc7e"
+  } ]
 }

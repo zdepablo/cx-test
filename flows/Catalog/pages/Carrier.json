@@ -1,11 +1,11 @@
 {
-  "name": "69e4b9c7-be83-4dba-abb1-d26ec007d76f",
-  "displayName": "Shirt Size",
+  "name": "5b2d513c-0ba6-4c32-b87a-693e67d044f9",
+  "displayName": "Carrier",
   "form": {
     "parameters": [ {
-      "displayName": "sirtsize",
+      "displayName": "merch",
       "required": true,
-      "entityType": "@ShirtSize",
+      "entityType": "@Merch",
       "fillBehavior": {
         "initialPromptFulfillment": {
         
@@ -15,26 +15,16 @@
           "triggerFulfillment": {
             "messages": [ {
               "text": {
-                "text": [ "Please tell me the shirt size, such as XL." ]
+                "text": [ "Do you want a physical CD or the digital album?" ]
               },
               "languageCode": "en"
             }, {
               "payload": {
                 "richContent": [ [ {
                   "options": [ {
-                    "text": "XS"
+                    "text": "CD"
                   }, {
-                    "text": "S"
-                  }, {
-                    "text": "M"
-                  }, {
-                    "text": "L"
-                  }, {
-                    "text": "XL"
-                  }, {
-                    "text": "2XL"
-                  }, {
-                    "text": "3XL"
+                    "text": "Digital Album"
                   } ],
                   "type": "chips"
                 } ] ]
@@ -42,32 +32,22 @@
               "languageCode": "en"
             } ]
           },
-          "name": "c101229b-9c64-4003-aec1-41b908bff89c"
+          "name": "68d2bd0d-6dd1-40a7-a70a-e6df56787edf"
         }, {
           "event": "sys.no-input-default",
           "triggerFulfillment": {
             "messages": [ {
               "text": {
-                "text": [ "I couldn't understand the shirt size. What size do you want?" ]
+                "text": [ "I couldn't understand if you mean CD or MP3.  Which one do you want?" ]
               },
               "languageCode": "en"
             }, {
               "payload": {
                 "richContent": [ [ {
                   "options": [ {
-                    "text": "XS"
+                    "text": "CD"
                   }, {
-                    "text": "S"
-                  }, {
-                    "text": "M"
-                  }, {
-                    "text": "L"
-                  }, {
-                    "text": "XL"
-                  }, {
-                    "text": "2XL"
-                  }, {
-                    "text": "3XL"
+                    "text": "MP3"
                   } ],
                   "type": "chips"
                 } ] ]
@@ -75,10 +55,32 @@
               "languageCode": "en"
             } ]
           },
-          "name": "9e82ac47-f9a5-4f42-b9ae-7d241e084444"
+          "name": "7856ccc9-1466-4aea-8946-39cf77f04018"
         } ]
       },
       "redact": true
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Do you want this album on CD or MP3?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "CD"
+          }, {
+            "text": "MP3"
+          }, {
+            "text": "Price?"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
     } ]
   },
   "transitionRoutes": [ {
@@ -87,13 +89,13 @@
     
     },
     "targetPage": "Price",
-    "name": "defbbca0-2b56-4219-a1b9-992638de67d3"
+    "name": "922d6f7a-31ff-448e-a358-92eb2a8952dc"
   }, {
-    "condition": "$page.params.shirtsize = \"null\"",
+    "condition": "$page.params.merch != \"null\"",
     "triggerFulfillment": {
     
     },
     "targetPage": "Product",
-    "name": "e276d510-fb57-43ca-9f8f-547d21dc6717"
+    "name": "0b7c0329-d324-4cfc-b8f7-33b03b8a2601"
   } ]
 }
